@@ -5,4 +5,4 @@ RUN chmod +x ./gradlew
 RUN ./gradlew bootJar --no-daemon
 EXPOSE 8080
 USER nobody
-ENTRYPOINT ["java", "-jar", "build/libs/*.jar"]
+ENTRYPOINT ["java", "-jar", "build/libs/clientApi-0.0.1-SNAPSHOT.jar"]
